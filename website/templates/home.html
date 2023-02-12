@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+    %}
+    
+    <html>
+  <head>
+    <style>
+      .message {
+        font-size: 60px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: welcome 5s ease-in  ;
+      }
+
+      @keyframes welcome {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(50px);
+        }
+        100% {
+          transform: translateY(150px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message">Bienvenue</div>
+  </body>
+</html>
+
+  
+    {% endblock %}

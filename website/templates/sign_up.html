@@ -1,0 +1,52 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+    content %}
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/static/page.css">
+      <link rel="stylesheet" href="/static/fontawesome-free-6.2.1-web/css/all.min.css" crossorigin="anonymous">
+      <title>Document</title>
+  </head>
+  <body>
+      <div class="container">     
+          <div class="card">
+          <form  method="post">
+              <h2>sign up</h2>
+              <div class="group">
+                  <input required="" type="text" class="input" name="firstName">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Nom</label>
+              </div><br>
+              <div class="group">
+                  <input required="" type="email" class="input" name="email">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Email</label>
+              </div><br>
+              <div class="group">
+                  <input required="" type="password" class="input" name="password1">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Mot de passe</label>
+              </div><br>
+              <div class="group">
+                  <input required="" type="password" class="input" name="password2">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Confirmer le mot de passe</label>
+              </div>
+              <a href="/login">avez-vous deja un compte?</a>
+              <div>
+                  <button type="reset">reset</button>
+              <button type="submit">sign up</button>
+              </div>
+            </form>
+          </div>
+      </div>
+  </body>
+  </html>
+{% endblock %}
